@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Iphone" version="4">
+  <OBJECT>
+    <ID name="Iphone" mc="Standard.Project" uid="a137c974-ccb0-492d-86d6-f083c6c0c896"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Iphone]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="iphone" mc="Standard.Package" uid="c1286032-60ca-4878-8cb9-8fbd39a6dea5"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="Iphone" mc="Infrastructure.DiagramSet" uid="6b1f066e-a604-4de6-98bc-bb7b456ae735"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

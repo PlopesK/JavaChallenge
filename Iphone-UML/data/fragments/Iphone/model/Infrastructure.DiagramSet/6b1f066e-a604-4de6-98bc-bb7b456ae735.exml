@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Iphone" version="4">
+  <OBJECT>
+    <ID name="Iphone" mc="Infrastructure.DiagramSet" uid="6b1f066e-a604-4de6-98bc-bb7b456ae735"/>
+    <PID name="Iphone" mc="Standard.Project" uid="a137c974-ccb0-492d-86d6-f083c6c0c896"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Iphone]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

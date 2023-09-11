@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="iphone" version="4">
+  <OBJECT>
+    <ID name="iphone" mc="Standard.Package" uid="c1286032-60ca-4878-8cb9-8fbd39a6dea5"/>
+    <PID name="Iphone" mc="Standard.Project" uid="a137c974-ccb0-492d-86d6-f083c6c0c896"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[iphone]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Música" mc="Standard.Class" uid="42b34bc5-9e3b-4df1-a47a-daec5b07d82f"/>
+        <COMPID name="ReprodutorMusical" mc="Standard.Class" uid="45706bcf-8633-4bc3-b289-77f665d9e0b3"/>
+        <COMPID name="Página" mc="Standard.Class" uid="6447deb9-dc25-486b-b5b9-60b10d68167b"/>
+        <COMPID name="Navegador" mc="Standard.Class" uid="df9ca89f-053a-4f87-a608-bd3965a08616"/>
+        <COMPID name="Telefone" mc="Standard.Class" uid="d34bed1b-5879-4b1e-9e4a-63d9fac862ca"/>
+        <COMPID name="Aparelho" mc="Standard.Class" uid="b46bce87-465f-4f83-bc0d-739d39b550c8"/>
+        <COMPID name="Menu" mc="Standard.Class" uid="a659869f-53db-4f3f-9e24-4534ac28d484"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="iphone Class diagram" mc="Standard.ClassDiagram" uid="b9c34263-bfc0-4a5d-af3a-5fc30daba171"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
