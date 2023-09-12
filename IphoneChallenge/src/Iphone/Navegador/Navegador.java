@@ -1,4 +1,4 @@
-package Iphone;
+package Iphone.Navegador;
 
 public class Navegador {
 }

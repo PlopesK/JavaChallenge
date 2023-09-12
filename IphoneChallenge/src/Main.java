@@ -1,17 +1,36 @@
+import Iphone.Aparelho;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        //--------------------- Aparelho ---------------------
+        //Contato
+        Aparelho aparelho = new Aparelho();
 
-        // Press Ctrl+F5 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        System.out.println("");
+        aparelho.adicionarContato("Gabriel João", 2131232);
+        aparelho.adicionarContato("Ana", 312321213);
+        aparelho.adicionarContato("João", 33231312);
+        aparelho.adicionarContato("Julia", 821987312);
+        aparelho.adicionarContato("Gabriel", 4444444);
 
-            // Press Alt+F5 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing F9.
-            System.out.println("i = " + i);
-        }
+        aparelho.exibirContato();
+        System.out.println("--------------------------------------------------");
+
+        aparelho.removerContato(2131232);
+        aparelho.exibirContato();
+        System.out.println("--------------------------------------------------");
+
+        //Correio de Voz
+        aparelho.iniciarCorreioVoz(4444444, "Bom dia!");
+        System.out.println("\n--------------------------------------------------");
+
+        //Ligação
+        aparelho.encerrar(); //Mensagem quando não está em ligação
+        aparelho.ligar(4444444);
+        aparelho.atender(4444444);
+        aparelho.encerrar(); //Encerrar ligação
+        aparelho.atender(4444444); //Mensagem quando atende sem ligação
     }
 }

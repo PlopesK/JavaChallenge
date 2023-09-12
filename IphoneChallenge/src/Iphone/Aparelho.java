@@ -1,22 +1,23 @@
 package Iphone;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Aparelho {
-    private Map<String, Integer> aparelhoMap;
+    private final Map<Integer, String> aparelhoMap;
+    private boolean ligando;
 
     public Aparelho() {
         this.aparelhoMap = new HashMap<>();
     }
 
+    // ------------------ Ações com o contato ------------------
     public void adicionarContato(String nome, Integer telefone) {
-        aparelhoMap.put(nome, telefone);
+        aparelhoMap.put(telefone, nome);
     }
 
-    public void removerContato(String nome) {
+    public void removerContato(Integer telefone) {
         if(!aparelhoMap.isEmpty()) {
-            aparelhoMap.remove(nome);
+                aparelhoMap.remove(telefone);
         } else {
             System.out.println("Agenda vazia!");
         }
@@ -26,30 +27,33 @@ public class Aparelho {
         System.out.println(aparelhoMap);
     }
 
-    public Integer pesquisarPorNome(String nome) {
-        Integer numeroPorNome = null;
-        if(!aparelhoMap.isEmpty()) {
-            numeroPorNome = aparelhoMap.get(nome);
-        } else {
-            System.out.println("Agenda vazia!");
-        }
-        return numeroPorNome;
+    // ------------------ Ligar, Atender e Correio de Voz ------------------
+
+    public void iniciarCorreioVoz(int telefone, String mensagem) {
+        System.out.println("\nConversa com " + telefone);
+        System.out.println(mensagem);
     }
 
-    public static void main(String[] args) {
-        Aparelho aparelho = new Aparelho();
+    public void ligar(int telefone) {
+        System.out.println("\nLigando para " + telefone);
+        ligando = true;
+    }
 
-        aparelho.adicionarContato("Gabriel João", 2131232);
-        aparelho.adicionarContato("Ana", 312321213);
-        aparelho.adicionarContato("João", 33231312);
-        aparelho.adicionarContato("Julia", 821987312);
-        aparelho.adicionarContato("Gabriel", 4444444);
+    public void encerrar() {
+        if(ligando) {
+            System.out.println("\nLigação encerrada!");
+            ligando = false;
+        } else {
+            System.out.println("\nVocê não está em uma ligação!");
+        }
+    }
 
-        aparelho.exibirContato();
-
-        aparelho.removerContato("Gabriel João");
-        aparelho.exibirContato();
-
-        System.out.println("\nPesquisou o usuário de número: \n" + aparelho.pesquisarPorNome("Gabriel"));
+    public void atender(int telefone) {
+        if(ligando) {
+            System.out.println("\nAtendendo " + telefone);
+            System.out.println("\nLigação em andamento!");
+        } else {
+            System.out.println("\nVocê não tem ligações!");
+        }
     }
 }
