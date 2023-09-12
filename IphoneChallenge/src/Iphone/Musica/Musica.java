@@ -1,7 +1,6 @@
 package Iphone.Musica;
 
 public class Musica {
-
     private String titulo;
     private String cantores;
     private double tempo;
@@ -26,10 +25,6 @@ public class Musica {
 
     @Override
     public String toString() {
-        return "\nMusica {" +
-                "titulo= '" + titulo + '\'' +
-                ", cantores= '" + cantores + '\'' +
-                ", tempo=" + tempo +
-                "}\n";
+        return "\n '" + titulo + '\'' + ", cantores= '" + cantores + '\'' + ", tempo= " + tempo + "\n";
     }
 }

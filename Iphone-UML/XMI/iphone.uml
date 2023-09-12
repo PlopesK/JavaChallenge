@@ -1,99 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_xIeOgFDNEe6MdKEtRuqoug" name="iphone">
-  <eAnnotations xmi:id="_xIeOgVDNEe6MdKEtRuqoug" source="Objing">
-    <contents xmi:type="uml:Property" xmi:id="_xIeOglDNEe6MdKEtRuqoug" name="exporterVersion">
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_xIeOg1DNEe6MdKEtRuqoug" value="3.0.0"/>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="__KxKIFEFEe6zsumWYFL6QQ" name="iphone">
+  <eAnnotations xmi:id="__KxKIVEFEe6zsumWYFL6QQ" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="__KxKIlEFEe6zsumWYFL6QQ" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="__KxKI1EFEe6zsumWYFL6QQ" value="3.0.0"/>
     </contents>
   </eAnnotations>
-  <packagedElement xmi:type="uml:Class" xmi:id="_xIeOhFDNEe6MdKEtRuqoug" name="Música">
-    <ownedAttribute xmi:id="_xIeOhVDNEe6MdKEtRuqoug" name="reprodutorMusical" visibility="public" type="_xIeOkFDNEe6MdKEtRuqoug" isUnique="false" association="_xIeOjVDNEe6MdKEtRuqoug">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIeOhlDNEe6MdKEtRuqoug"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="__KxKJFEFEe6zsumWYFL6QQ" name="Música">
+    <ownedAttribute xmi:id="__KxKJVEFEe6zsumWYFL6QQ" name="reprodutorMusical" visibility="public" type="__KxKMFEFEe6zsumWYFL6QQ" isUnique="false" association="__KxKLVEFEe6zsumWYFL6QQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__KxKJlEFEe6zsumWYFL6QQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_xIeOh1DNEe6MdKEtRuqoug" name="Titulo" visibility="public" isUnique="false">
+    <ownedAttribute xmi:id="__KxKJ1EFEe6zsumWYFL6QQ" name="Titulo" visibility="public" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_xIeOiFDNEe6MdKEtRuqoug" name="Cantores" visibility="public" isUnique="false">
+    <ownedAttribute xmi:id="__KxKKFEFEe6zsumWYFL6QQ" name="Cantores" visibility="public" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_xIeOiVDNEe6MdKEtRuqoug" name="Tempo" visibility="public" isUnique="false">
+    <ownedAttribute xmi:id="__KxKKVEFEe6zsumWYFL6QQ" name="Tempo" visibility="public" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
     </ownedAttribute>
-    <ownedOperation xmi:id="_xIeOilDNEe6MdKEtRuqoug" name="getTitulo" visibility="public"/>
-    <ownedOperation xmi:id="_xIeOi1DNEe6MdKEtRuqoug" name="getCantopres" visibility="public"/>
-    <ownedOperation xmi:id="_xIeOjFDNEe6MdKEtRuqoug" name="getTempo" visibility="public"/>
+    <ownedOperation xmi:id="__KxKKlEFEe6zsumWYFL6QQ" name="getTitulo" visibility="public"/>
+    <ownedOperation xmi:id="__KxKK1EFEe6zsumWYFL6QQ" name="getCantopres" visibility="public"/>
+    <ownedOperation xmi:id="__KxKLFEFEe6zsumWYFL6QQ" name="getTempo" visibility="public"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_xIeOjVDNEe6MdKEtRuqoug" memberEnd="_xIeOhVDNEe6MdKEtRuqoug _xIeOjlDNEe6MdKEtRuqoug">
-    <ownedEnd xmi:id="_xIeOjlDNEe6MdKEtRuqoug" visibility="public" type="_xIeOhFDNEe6MdKEtRuqoug" isUnique="false" association="_xIeOjVDNEe6MdKEtRuqoug">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIeOj1DNEe6MdKEtRuqoug"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="__KxKLVEFEe6zsumWYFL6QQ" memberEnd="__KxKJVEFEe6zsumWYFL6QQ __KxKLlEFEe6zsumWYFL6QQ">
+    <ownedEnd xmi:id="__KxKLlEFEe6zsumWYFL6QQ" visibility="public" type="__KxKJFEFEe6zsumWYFL6QQ" isUnique="false" association="__KxKLVEFEe6zsumWYFL6QQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__KxKL1EFEe6zsumWYFL6QQ"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_xIeOkFDNEe6MdKEtRuqoug" name="ReprodutorMusical">
-    <ownedAttribute xmi:id="_xIeOkVDNEe6MdKEtRuqoug" name="menu" visibility="public" type="_xIeOtlDNEe6MdKEtRuqoug" isUnique="false" association="_xIeOl1DNEe6MdKEtRuqoug">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIeOklDNEe6MdKEtRuqoug"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="__KxKMFEFEe6zsumWYFL6QQ" name="ReprodutorMusical">
+    <ownedAttribute xmi:id="__KxKMVEFEe6zsumWYFL6QQ" name="iphone" visibility="public" type="__KxKTlEFEe6zsumWYFL6QQ" isUnique="false" association="__KxKN1EFEe6zsumWYFL6QQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__KxKMlEFEe6zsumWYFL6QQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_xIeOk1DNEe6MdKEtRuqoug" name="tocando" visibility="public" isUnique="false">
+    <ownedAttribute xmi:id="__KxKM1EFEe6zsumWYFL6QQ" name="tocando" visibility="public" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
-    <ownedOperation xmi:id="_xIeOlFDNEe6MdKEtRuqoug" name="tocar" visibility="public"/>
-    <ownedOperation xmi:id="_xIeOlVDNEe6MdKEtRuqoug" name="pausar" visibility="public"/>
-    <ownedOperation xmi:id="_xIeOllDNEe6MdKEtRuqoug" name="selecionarMusica" visibility="public"/>
+    <ownedOperation xmi:id="__KxKNFEFEe6zsumWYFL6QQ" name="tocar" visibility="public"/>
+    <ownedOperation xmi:id="__KxKNVEFEe6zsumWYFL6QQ" name="pausar" visibility="public"/>
+    <ownedOperation xmi:id="__KxKNlEFEe6zsumWYFL6QQ" name="selecionarMusica" visibility="public"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_xIeOl1DNEe6MdKEtRuqoug" memberEnd="_xIeOkVDNEe6MdKEtRuqoug _xIeOmFDNEe6MdKEtRuqoug">
-    <ownedEnd xmi:id="_xIeOmFDNEe6MdKEtRuqoug" visibility="public" type="_xIeOkFDNEe6MdKEtRuqoug" isUnique="false" association="_xIeOl1DNEe6MdKEtRuqoug">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIeOmVDNEe6MdKEtRuqoug"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="__KxKN1EFEe6zsumWYFL6QQ" memberEnd="__KxKMVEFEe6zsumWYFL6QQ __KxKOFEFEe6zsumWYFL6QQ">
+    <ownedEnd xmi:id="__KxKOFEFEe6zsumWYFL6QQ" visibility="public" type="__KxKMFEFEe6zsumWYFL6QQ" isUnique="false" association="__KxKN1EFEe6zsumWYFL6QQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__KxKOVEFEe6zsumWYFL6QQ"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_xIeOmlDNEe6MdKEtRuqoug" name="Página">
-    <ownedAttribute xmi:id="_xIeOm1DNEe6MdKEtRuqoug" name="navegador" visibility="public" type="_xIeOolDNEe6MdKEtRuqoug" isUnique="false" association="_xIeOn1DNEe6MdKEtRuqoug">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIeOnFDNEe6MdKEtRuqoug"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="__KxKOlEFEe6zsumWYFL6QQ" name="Navegador">
+    <ownedAttribute xmi:id="__KxKO1EFEe6zsumWYFL6QQ" name="iphone" visibility="public" type="__KxKTlEFEe6zsumWYFL6QQ" isUnique="false" association="__KxKQVEFEe6zsumWYFL6QQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__KxKPFEFEe6zsumWYFL6QQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_xIeOnVDNEe6MdKEtRuqoug" name="URL" visibility="public" isUnique="false">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_xIeOnlDNEe6MdKEtRuqoug" name="Titulo" visibility="public" isUnique="false">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_xIeOn1DNEe6MdKEtRuqoug" memberEnd="_xIeOm1DNEe6MdKEtRuqoug _xIeOoFDNEe6MdKEtRuqoug">
-    <ownedEnd xmi:id="_xIeOoFDNEe6MdKEtRuqoug" visibility="public" type="_xIeOmlDNEe6MdKEtRuqoug" isUnique="false" association="_xIeOn1DNEe6MdKEtRuqoug">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIeOoVDNEe6MdKEtRuqoug"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_xIeOolDNEe6MdKEtRuqoug" name="Navegador">
-    <ownedAttribute xmi:id="_xIeOo1DNEe6MdKEtRuqoug" name="menu" visibility="public" type="_xIeOtlDNEe6MdKEtRuqoug" isUnique="false" association="_xIeOqVDNEe6MdKEtRuqoug">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIeOpFDNEe6MdKEtRuqoug"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_xIeOpVDNEe6MdKEtRuqoug" name="aberta" visibility="public" isUnique="false">
+    <ownedAttribute xmi:id="__KxKPVEFEe6zsumWYFL6QQ" name="aberta" visibility="public" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
-    <ownedOperation xmi:id="_xIeOplDNEe6MdKEtRuqoug" name="exibirPagina" visibility="public"/>
-    <ownedOperation xmi:id="_xIeOp1DNEe6MdKEtRuqoug" name="adicionar0NovaAba" visibility="public"/>
-    <ownedOperation xmi:id="_xIeOqFDNEe6MdKEtRuqoug" name="atualizarPagina" visibility="public"/>
+    <ownedOperation xmi:id="__KxKPlEFEe6zsumWYFL6QQ" name="exibirPagina" visibility="public"/>
+    <ownedOperation xmi:id="__KxKP1EFEe6zsumWYFL6QQ" name="adicionar0NovaAba" visibility="public"/>
+    <ownedOperation xmi:id="__KxKQFEFEe6zsumWYFL6QQ" name="atualizarPagina" visibility="public"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_xIeOqVDNEe6MdKEtRuqoug" memberEnd="_xIeOo1DNEe6MdKEtRuqoug _xIeOqlDNEe6MdKEtRuqoug">
-    <ownedEnd xmi:id="_xIeOqlDNEe6MdKEtRuqoug" visibility="public" type="_xIeOolDNEe6MdKEtRuqoug" isUnique="false" association="_xIeOqVDNEe6MdKEtRuqoug">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIeOq1DNEe6MdKEtRuqoug"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="__KxKQVEFEe6zsumWYFL6QQ" memberEnd="__KxKO1EFEe6zsumWYFL6QQ __KxKQlEFEe6zsumWYFL6QQ">
+    <ownedEnd xmi:id="__KxKQlEFEe6zsumWYFL6QQ" visibility="public" type="__KxKOlEFEe6zsumWYFL6QQ" isUnique="false" association="__KxKQVEFEe6zsumWYFL6QQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__KxKQ1EFEe6zsumWYFL6QQ"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_xIeOrFDNEe6MdKEtRuqoug" name="Aparelho">
-    <ownedAttribute xmi:id="_xIeOrVDNEe6MdKEtRuqoug" name="menu" visibility="public" type="_xIeOtlDNEe6MdKEtRuqoug" isUnique="false" association="_xIeOs1DNEe6MdKEtRuqoug">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIeOrlDNEe6MdKEtRuqoug"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="__KxKRFEFEe6zsumWYFL6QQ" name="Aparelho">
+    <ownedAttribute xmi:id="__KxKRVEFEe6zsumWYFL6QQ" name="iphone" visibility="public" type="__KxKTlEFEe6zsumWYFL6QQ" isUnique="false" association="__KxKS1EFEe6zsumWYFL6QQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__KxKRlEFEe6zsumWYFL6QQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_xIeOr1DNEe6MdKEtRuqoug" name="ligando" visibility="public" isUnique="false">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    <ownedAttribute xmi:id="__KxKR1EFEe6zsumWYFL6QQ" name="ligando" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
-    <ownedOperation xmi:id="_xIeOsFDNEe6MdKEtRuqoug" name="ligar" visibility="public"/>
-    <ownedOperation xmi:id="_xIeOsVDNEe6MdKEtRuqoug" name="atender" visibility="public"/>
-    <ownedOperation xmi:id="_xIeOslDNEe6MdKEtRuqoug" name="iniciarCorreioVoz" visibility="public"/>
+    <ownedOperation xmi:id="__KxKSFEFEe6zsumWYFL6QQ" name="ligar" visibility="public"/>
+    <ownedOperation xmi:id="__KxKSVEFEe6zsumWYFL6QQ" name="atender" visibility="public"/>
+    <ownedOperation xmi:id="__KxKSlEFEe6zsumWYFL6QQ" name="iniciarCorreioVoz" visibility="public"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_xIeOs1DNEe6MdKEtRuqoug" memberEnd="_xIeOrVDNEe6MdKEtRuqoug _xIeOtFDNEe6MdKEtRuqoug">
-    <ownedEnd xmi:id="_xIeOtFDNEe6MdKEtRuqoug" visibility="public" type="_xIeOrFDNEe6MdKEtRuqoug" isUnique="false" association="_xIeOs1DNEe6MdKEtRuqoug">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xIeOtVDNEe6MdKEtRuqoug"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="__KxKS1EFEe6zsumWYFL6QQ" memberEnd="__KxKRVEFEe6zsumWYFL6QQ __KxKTFEFEe6zsumWYFL6QQ">
+    <ownedEnd xmi:id="__KxKTFEFEe6zsumWYFL6QQ" visibility="public" type="__KxKRFEFEe6zsumWYFL6QQ" isUnique="false" association="__KxKS1EFEe6zsumWYFL6QQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__KxKTVEFEe6zsumWYFL6QQ"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_xIeOtlDNEe6MdKEtRuqoug" name="Menu">
-    <ownedOperation xmi:id="_xIeOt1DNEe6MdKEtRuqoug" name="acessarReprodutor" visibility="public"/>
-    <ownedOperation xmi:id="_xIeOuFDNEe6MdKEtRuqoug" name="acessarAparelho" visibility="public"/>
-    <ownedOperation xmi:id="_xIeOuVDNEe6MdKEtRuqoug" name="acessarNavegador" visibility="public"/>
-  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="__KxKTlEFEe6zsumWYFL6QQ" name="Iphone"/>
 </uml:Model>
