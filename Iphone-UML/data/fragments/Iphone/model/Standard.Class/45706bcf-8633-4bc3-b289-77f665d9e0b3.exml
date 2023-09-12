@@ -58,6 +58,48 @@
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="adicionarMusica" mc="Standard.Operation" uid="23b5d1b2-fbb9-4aa1-bdec-d5f63f4146a6"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[adicionarMusica]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="exibirMusicas" mc="Standard.Operation" uid="61f0c04c-614e-4b8c-9fc4-cc201c80561a"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[exibirMusicas]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="removerMusica" mc="Standard.Operation" uid="332e81c7-3f16-4afc-99ff-4f1efc065a12"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[removerMusica]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="OwnedAttribute">
         <OBJECT>
@@ -87,7 +129,7 @@
       </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="menu" mc="Standard.AssociationEnd" uid="4bc50eb3-379b-4da2-b855-c11ab3d4c6aa"/>
+          <ID name="iphone" mc="Standard.AssociationEnd" uid="da436479-79cd-49a5-a548-6c4774464836"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -100,16 +142,16 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[menu]]></ATT>
+            <ATT name="Name"><![CDATA[iphone]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Menu" mc="Standard.Class" uid="a659869f-53db-4f3f-9e24-4534ac28d484"/>
+              <ID name="Iphone" mc="Standard.Class" uid="a659869f-53db-4f3f-9e24-4534ac28d484"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="6e6aa672-b1f8-443c-a49e-2f918c01d0f9"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="15457843-3ee0-48c5-9bab-eaa2f9e8b3fb"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -127,11 +169,11 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="menu" mc="Standard.AssociationEnd" uid="4bc50eb3-379b-4da2-b855-c11ab3d4c6aa"/>
+                    <COMPID name="iphone" mc="Standard.AssociationEnd" uid="da436479-79cd-49a5-a548-6c4774464836"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="8edaae38-d434-491b-b22d-4df4e22bd6e2"/>
+                      <ID name="" mc="Standard.Association" uid="e6e021c4-ab6d-49a1-895f-3444cb8ffe1e"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -143,7 +185,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="8edaae38-d434-491b-b22d-4df4e22bd6e2"/>
+              <COMPID name="" mc="Standard.Association" uid="e6e021c4-ab6d-49a1-895f-3444cb8ffe1e"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>

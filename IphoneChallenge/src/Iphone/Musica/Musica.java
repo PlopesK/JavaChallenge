@@ -19,10 +19,6 @@ public class Musica {
         return cantores;
     }
 
-    public double getTempo() {
-        return tempo;
-    }
-
     @Override
     public String toString() {
         return "\n '" + titulo + '\'' + ", cantores= '" + cantores + '\'' + ", tempo= " + tempo + "\n";

@@ -45,7 +45,63 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="iniciarCorreioVoz" mc="Standard.Operation" uid="b93e9e37-6108-46ec-96e6-9be63bfbff35"/>
+          <ID name="encerrar" mc="Standard.Operation" uid="b93e9e37-6108-46ec-96e6-9be63bfbff35"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[encerrar]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="adicionarContato" mc="Standard.Operation" uid="e8b4aaf6-d7b5-492b-aab2-00429a5246a9"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[adicionarContato]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="removerContato" mc="Standard.Operation" uid="dfd0abcf-31d0-4dd4-922e-be336b520f4f"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[removerContato]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="exibirContato" mc="Standard.Operation" uid="19f4021d-4c73-49d0-a58a-91110bcd8a9c"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[exibirContato]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="iniciarCorreioVoz" mc="Standard.Operation" uid="3e0388a3-2d28-4796-b973-270860a43592"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -80,14 +136,14 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Type">
-              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+              <FOREIGNID name="boolean" mc="Standard.DataType" uid="00000004-0000-0005-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="menu" mc="Standard.AssociationEnd" uid="b4cfa0b9-41e4-4be3-99cd-6cd49c22e761"/>
+          <ID name="iphone" mc="Standard.AssociationEnd" uid="da278772-296e-49c3-aa4c-667969948870"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -100,16 +156,16 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[menu]]></ATT>
+            <ATT name="Name"><![CDATA[iphone]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Menu" mc="Standard.Class" uid="a659869f-53db-4f3f-9e24-4534ac28d484"/>
+              <ID name="Iphone" mc="Standard.Class" uid="a659869f-53db-4f3f-9e24-4534ac28d484"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="db674787-f55b-4df5-b1ac-e6ad903fd881"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="a39f18c6-6bba-4860-abc3-3d4487671798"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -127,11 +183,11 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="menu" mc="Standard.AssociationEnd" uid="b4cfa0b9-41e4-4be3-99cd-6cd49c22e761"/>
+                    <COMPID name="iphone" mc="Standard.AssociationEnd" uid="da278772-296e-49c3-aa4c-667969948870"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="732d5f94-36a5-46fb-984a-a1a7c5b24e7f"/>
+                      <ID name="" mc="Standard.Association" uid="794c342b-a15e-480f-8d9a-f70833527746"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -143,7 +199,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="732d5f94-36a5-46fb-984a-a1a7c5b24e7f"/>
+              <COMPID name="" mc="Standard.Association" uid="794c342b-a15e-480f-8d9a-f70833527746"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
